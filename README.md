@@ -1,4 +1,4 @@
-# Memoizer
+# MemoHelper
 Add one liner method memoization to ruby classes.  This is solely syntactic prettiness and does not add much functionality over basic ruby.
 
 # Purpose/Examples
@@ -34,10 +34,10 @@ memo(:good_memo) { expensive_method }
 # Installation
 Add the following to your Gemfile and bundle install:
 ```
-gem "memoizer", '~> 0.0.1',  github: 'CJBridges/memoizer'
+gem "memo_helper", '~> 0.0.1'
 ```
 
-# Other related (and much more expansive! gems)
+# Other related (and much more feature filled!) gems
 [Memoist](https://github.com/matthewrudy/memoist)
 
 [Decent Exposure](https://github.com/hashrocket/decent_exposure)

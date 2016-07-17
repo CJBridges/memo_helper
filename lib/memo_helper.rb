@@ -1,6 +1,6 @@
-require 'memoizer/version'
+require 'memo_helper/version'
 
-module Memoizer
+module MemoHelper
   def memo(method_name, &block)
     self.class_eval do
       define_method "unmemoized_#{method_name}", block

@@ -1,17 +1,17 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'memoizer/version'
+require 'memo_helper/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "memoizer"
-  spec.version       = Memoizer::VERSION
+  spec.name          = "memo_helper"
+  spec.version       = MemoHelper::VERSION
   spec.authors       = ["CJ Bridges"]
-  spec.email         = ["bridges.cj@gmail.com"]
+  spec.email         = ["gratch06@gmail.com"]
 
   spec.summary       = "One line method memoization for ruby classes."
   spec.description   = "One line method memoization for ruby classes."
-  spec.homepage      = "https://github.com/CJBridges/memoizer"
+  spec.homepage      = "https://github.com/CJBridges/memo_helper"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    memoizer (0.0.1)
+    memo_helper (0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -31,7 +31,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.8)
   fuubar
-  memoizer!
+  memo_helper!
   rspec (> 3.0)
 
 BUNDLED WITH

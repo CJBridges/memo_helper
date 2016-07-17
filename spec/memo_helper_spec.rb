@@ -1,8 +1,8 @@
-require 'memoizer'
+require 'memo_helper'
 
-module MemoizerTest
+module MemoHelperTest
   class TargetClass
-    extend Memoizer
+    extend MemoHelper
 
     memo(:hardcoded) { 3 }
     memo(:using_instance_method) { instance_method }
@@ -13,8 +13,8 @@ module MemoizerTest
   end
 end
 
-RSpec.describe Memoizer do
-  let(:target_class) { MemoizerTest::TargetClass }
+RSpec.describe MemoHelper do
+  let(:target_class) { MemoHelperTest::TargetClass }
 
   it 'returns the proper value for a hardcoded block' do
     expect(target_class.new.hardcoded).to eq(3)
